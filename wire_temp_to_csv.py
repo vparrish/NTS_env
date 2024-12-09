@@ -1,6 +1,7 @@
 import csv
 from collections import defaultdict
-from datetime import datetime, parser
+from datetime import datetime
+from dateutil import parser
 import pandas as pd
 
 def reformat_csv(input_file, output_file, uniform_time_file):
@@ -68,5 +69,5 @@ def process_csv(input_file, output_file):
 
 
 # USAGE
-reformat_csv('8.12.24_11.20.24.csv', 'output.csv', 'output_uniform_time.csv')
-process_csv('output_uniform_time.csv', 'processed_output.csv')
+reformat_csv('/home/victoria/work/icecube/service/nts/NTS_VNA/csv/8.12.24_12.05.24_no_outlier.csv', '/home/victoria/work/icecube/service/nts/NTS_VNA/csv/output.csv', '/home/victoria/work/icecube/service/nts/NTS_VNA/csv/output_uniform_time.csv')
+process_csv('/home/victoria/work/icecube/service/nts/NTS_VNA/csv/output_uniform_time.csv', '/home/victoria/work/icecube/service/nts/NTS_VNA/csv/new_processed_output.csv')
