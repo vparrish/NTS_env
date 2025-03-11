@@ -3,6 +3,7 @@
 ## Project dependencies:
 - matplotlib
 - pandas
+- seaborn
 I think that's it, but I have a bad cold right now and am suffering slightly from brain fog. If you run anything and get an error that you don't have a library, that is telling.
 
 ## How to navigate this project
